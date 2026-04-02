@@ -3,17 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>小明的開發者作品集 - 專注於前端技術與使用者體驗</title>
+  <meta name="description" content="你好，我是小明。這是我作為前端工程師的學習紀錄與作品展示空間。這裡包含了我的 Side Project、技術部落格以及對 Web 開發的熱情實作心得，歡迎與我聯繫交流。">
+  
   <style>
     *, *::before, *::after { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; max-width: 100%; }
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", Arial, sans-serif; line-height: 1.6; }
+    /* 修正 3: 確保不會水平捲動 */
+    html, body { 
+      margin: 0; 
+      padding: 0; 
+      max-width: 100%; 
+      overflow-x: hidden; 
+    }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", Arial, sans-serif; line-height: 1.6; color: #374151; }
     img { max-width: 100%; height: auto; display: block; }
-    .container { width: 1920px; margin: 0 auto; padding: 16px; }
-    nav a { margin-right: 12px; text-decoration: none; }
+    
+    /* 修正 4: 修改容器寬度，避免在 320px/768px/1440px 產生捲軸 */
+    .container { 
+      width: 100%; 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 16px; 
+    }
+    
+    nav { padding: 20px 0; border-bottom: 1px solid #f3f4f6; margin-bottom: 24px; }
+    nav a { margin-right: 16px; text-decoration: none; color: #2563eb; font-weight: 500; }
+    nav a:hover { text-decoration: underline; }
+    
+    .hero { padding: 40px 0; }
     .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
     .col-12 { grid-column: span 12; }
+    
     @media (min-width: 768px) { .col-md-6 { grid-column: span 6; } }
-    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+    
+    .card { 
+      border: 1px solid #e5e7eb; 
+      border-radius: 12px; 
+      padding: 24px; 
+      background: #fff; 
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+    }
+    footer { margin-top: 40px; padding: 24px 0; border-top: 1px solid #e5e7eb; }
   </style>
 </head>
 <body>
@@ -21,17 +51,37 @@
     <nav aria-label="主選單">
       <a href="#about">關於我</a>
       <a href="#projects">作品集</a>
-      <a href="https://example.com/blog">技術部落格</a>
+      <a href="https://blog.example.com">技術部落格</a>
       <a href="mailto:me@example.com">聯絡我</a>
     </nav>
-    <h1>你好，我是小明：前端工程師新手之路</h1>
-    <h1>你好，我是小明：前端工程師新手之路</h1>
-    <p>歡迎來到我的個人網站！這裡整理了學習紀錄、Side Project 與實作心得。</p>
+    <div class="hero">
+      <h1>你好，我是小明：前端工程師新手之路</h1>
+      <p>歡迎來到我的個人網站！這裡整理了學習紀錄、Side Project 與實作心得。</p>
+    </div>
   </header>
 
+  <main class="container">
+    <section id="projects" class="grid">
+      <div class="col-12 col-md-6">
+        <article class="card">
+          <h3>個人作品 01</h3>
+          <p>這是我的第一個前端練習項目，使用了 HTML 與 CSS 進行切版。</p>
+          <a href="https://github.com/your-username/project-1">查看專案</a>
+        </article>
+      </div>
+      <div class="col-12 col-md-6">
+        <article class="card">
+          <h3>個人作品 02</h3>
+          <p>練習響應式設計的專案，確保在手機與電腦上都能完美呈現。</p>
+          <a href="https://github.com/your-username/project-2">查看專案</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
   <footer class="container" role="contentinfo">
-    <p>© 2025 My Portfolio · <a href="#">GitHub</a></p>
-    <img src="https://source.unsplash.com/600x200/?technology,abstract" alt="">
+    <p>© 2026 My Portfolio · <a href="https://github.com/your-username">GitHub Profile</a></p>
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&h=200" alt="筆記型電腦與程式碼的抽象背景圖">
   </footer>
 </body>
 </html>
