@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>東仔的數位行銷與前端開發作品集 | 電商營運實戰專家</title>
+  <title>東仔的電商營運與前端開發作品集 | 蝦皮 MOMO 酷澎實戰專家</title>
   
-  <meta name="description" content="你好，我是東仔。具備深厚的電商營運與廣告投放經驗，曾創下全平台年營業額 1,700 萬的佳績。目前正致力於結合行銷專業與前端開發技術，打造兼具數據思維與優質體驗的網頁轉化方案。">
+  <meta name="description" content="我是東仔，擁有年營收 1,700 萬的電商實戰背景。專精於蝦皮、MOMO、PChome 與酷澎等平台的營運與廣告投放。目前正結合前端開發技術，致力於打造高轉化率的電商網頁方案與數據分析工具。">
   
   <style>
     *, *::before, *::after { box-sizing: border-box; }
@@ -19,6 +19,7 @@
       font-family: system-ui, -apple-system, sans-serif;
       line-height: 1.6;
       color: #1f2937;
+      background-color: #fcfcfc;
     }
 
     .container { 
@@ -29,10 +30,9 @@
     }
     
     nav { padding: 15px 0; border-bottom: 2px solid #f3f4f6; }
-    /* 規範：所有 <a> 必須有有效 href，不可為空或純 # */
     nav a { margin-right: 20px; text-decoration: none; color: #1d4ed8; font-weight: 600; }
     
-    .hero { padding: 60px 0; background: #f9fafb; border-radius: 16px; margin: 20px 0; text-align: center; }
+    .hero { padding: 60px 0; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; margin: 20px 0; text-align: center; }
     
     .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
     .col-12 { grid-column: span 12; }
@@ -43,10 +43,27 @@
       border-radius: 12px; 
       padding: 24px; 
       background: #fff; 
-      transition: transform 0.2s;
     }
     .highlight { color: #e11d48; font-weight: bold; font-size: 1.2rem; }
     
+    /* 四大電商 Logo 區域排版 */
+    .logo-section { margin-top: 40px; text-align: center; }
+    .logo-grid { 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+      align-items: center; 
+      gap: 30px; 
+      margin-top: 20px; 
+    }
+    .logo-grid img { 
+      height: 40px; 
+      width: auto; 
+      filter: grayscale(20%); 
+      transition: filter 0.3s;
+    }
+    .logo-grid img:hover { filter: grayscale(0%); }
+
     footer { margin-top: 50px; padding: 40px 0; background: #111827; color: #fff; text-align: center; }
     footer a { color: #60a5fa; text-decoration: none; }
   </style>
@@ -62,29 +79,37 @@
     
     <div class="hero">
       <h1>我是東仔：電商營運專家與前端新手</h1>
-      <p>擅長廣告投放與轉單優化，致力於用程式碼解決業務痛點。</p>
+      <p>精通主流電商平台營運，年營業額突破 1,700 萬，現正轉型技術驅動開發。</p>
     </div>
   </header>
 
   <main class="container">
     <section class="grid">
       <article class="col-12 col-md-6 card">
-        <h3>核心專業：電商營運與投放</h3>
-        <p>精通主流電商平台操作，具備數據驅動的廣告投放能力，能有效控制獲客成本並提升 ROI。</p>
+        <h3>電商營運核心技能</h3>
+        <p>熟悉各大平台後台機制與 SEO 優化，具備精準的廣告投放與數據追蹤能力。</p>
       </article>
       
       <article class="col-12 col-md-6 card">
-        <h3>實戰成就</h3>
-        <p>曾達成所有平台加總 <span class="highlight">年營業額 1,700 萬</span> 的優異紀錄，對市場轉化率有極高敏銳度。</p>
+        <h3>1,700 萬年營收實績</h3>
+        <p>擁有從零到一打造爆品的經驗，熟悉全通路行銷佈局，穩定提升品牌營收。</p>
       </article>
+    </section>
+
+    <section class="logo-section">
+      <p>專精營運平台</p>
+      <div class="logo-grid">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Shopee.svg" alt="蝦皮購物 Shopee">
+        <img src="https://img.momo.com.tw/ecm/img/online/101/common/logo_v2.png" alt="momo 購物網">
+        <img src="https://www.pchome.com.tw/img/pchome_logo.png" alt="PChome 線上購物">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Coupang_logo.svg" alt="酷澎 Coupang">
+      </div>
     </section>
   </main>
 
   <footer class="container" role="contentinfo">
-    <p>© 2026 東仔 Portfolio · 聯絡電話：02-22662266</p>
-    <img src="https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&w=600&h=200" 
-         alt="顯示現代電子商務介面與購物車的平板電腦特寫" 
-         style="margin: 20px auto; border-radius: 8px;">
+    <p>© 2026 東仔 Portfolio · 服務專線：02-22662266</p>
+    <p><a href="https://example.com/resume">查看完整經歷</a></p>
   </footer>
 
 </body>
